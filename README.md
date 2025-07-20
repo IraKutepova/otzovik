@@ -25,6 +25,7 @@ curl -X POST "http://localhost:8000/reviews" -H "Content-Type: application/json"
 curl "http://localhost:8000/reviews"
 Ответ:
 [{"id":8,"text":"Нужно больше самокатов.","sentiment":"neutral","created_at":"2025-07-20T07:40:50.840350"},{"id":7,"text":"Сервис можно улучшить.","sentiment":"neutral","created_at":"2025-07-20T07:40:50.816835"},{"id":6,"text":"Зарядка отвратительная!","sentiment":"negative","created_at":"2025-07-20T07:40:43.913762"},{"id":5,"text":"Ремонт ужасный!","sentiment":"negative","created_at":"2025-07-20T07:40:43.894002"},{"id":4,"text":"Доставка плохая!","sentiment":"negative","created_at":"2025-07-20T07:40:43.859249"},{"id":3,"text":"Самокаты супер!","sentiment":"positive","created_at":"2025-07-20T07:40:36.631810"},{"id":2,"text":"Хороший сервис.","sentiment":"positive","created_at":"2025-07-20T07:40:36.612049"},{"id":1,"text":"Этот продукт просто отличный!","sentiment":"positive","created_at":"2025-07-20T07:40:36.542513"}]
+
 Получение негативных отзывов:
 curl "http://localhost:8000/reviews?sentiment=negative"
 Ответ:
